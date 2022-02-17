@@ -1,0 +1,13 @@
+
+.card{
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 200px;
+
+}
+
+.card-body{
+    padding: 1rem;
+}
+
