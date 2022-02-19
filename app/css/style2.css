@@ -4,9 +4,16 @@
     height: 250px;
     margin: 0 auto;
     margin-top: 200px;
+    background-color: rgb(238,238,238)  ;
+
 
 }
 
 .card-body{
     padding: 1rem;
+}
+
+
+body {
+    background-color: rgb(51,51,51)  ;
 }

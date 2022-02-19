@@ -1,9 +1,9 @@
-
 .card{
     width: 400px;
     height: 200px;
     margin: 0 auto;
     margin-top: 200px;
+    background-color: rgb(238,238,238)  ;
 
 }
 
@@ -11,3 +11,15 @@
     padding: 1rem;
 }
 
+body {
+    background-color: rgb(51,51,51)  ;
+}
+
+.sentence {
+    /*font-family:cursive;*/
+    font-family: Comic Sans MS;
+    color: rgba(180,178,180,0.98);
+    font-size: 70px;
+    margin-top: 100px;
+    text-align: center;
+}

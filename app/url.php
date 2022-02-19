@@ -1,13 +1,19 @@
 <?php
 use App\models\Urls;
+use App\models\DB;
 require_once "../vendor/autoload.php";
 session_start();
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+$hostName= new DB();
+$hostName = $hostName->hostName();
 
 
 if(strtoupper($_SERVER['REQUEST_METHOD']) == 'GET'){
 
-    die(header("Location: https://localhost/url-short/index.php"));
+    die(header("Location: https://$hostName/url-short/index.php"));
 
 }elseif(strtoupper($_SERVER['REQUEST_METHOD']) == 'POST' ) {
 
@@ -19,7 +25,7 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'GET'){
     }
 
     if(!isset($_POST['url-input'])){
-        header("Location: https://localhost/url-short/index.php");
+        header("Location: https://$hostName/url-short/index.php");
         exit("Input is empty");
     }
 
@@ -41,7 +47,7 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'GET'){
 
             if(checkUrl($Lurl)){
                 $randomString = random_string(2);
-                $finalString = mixSreverAddressWithRandomUrl("localhost/url-short",$randomString);
+                $finalString = mixSreverAddressWithRandomUrl("$hostName/url-short",$randomString);
 
 
                 $urlList = new Urls();
@@ -111,7 +117,7 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'GET'){
 
 
             <button class="btn btn-primary text-center" type="submit">Try Again</button>
-            <button class="btn btn-primary text-center" type="button" onclick="myFunction()">Copy Url</button>
+            <button class="btn btn-success text-center" type="button" onclick="myFunction()">Copy Url</button>
 
         </form>
     </div>
@@ -119,7 +125,7 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'GET'){
 </div>
 
 
-
+<div style="text-align: center ; margin-top: 100px">  <a href="https://github.com/sepmi" target="_blank"><img src="../Img/Icons/github.png"> </a></div>
 
 
 

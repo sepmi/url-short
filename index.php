@@ -28,7 +28,7 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'GET' || strtoupper($_SERVER['REQUE
     <link rel="stylesheet" href="app/css/style.css">
     <title>Url-shorten</title>
 </head>
-<body>
+<body  >
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
@@ -47,13 +47,20 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'GET' || strtoupper($_SERVER['REQUE
 
 
 
-                <button class="btn btn-primary " type="submit">Make it short</button>
+                <button class="btn btn-success " type="submit">Make it short</button>
 
             </form>
         </div>
 
+
+
+
     </div>
 
+    <p class="sentence" >Make It Short</p>
+
+
+    <div style="text-align: center ; margin-bottom: 0px">  <a href="https://github.com/sepmi" target="_blank"><img src="./Img/Icons/github.png"> </a></div>
 
 </body>
 </html>

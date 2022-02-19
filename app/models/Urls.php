@@ -19,7 +19,7 @@ class Urls extends DB{
 
     public function find($suffix){
 
-        $Surl = "https://localhost/url-short/". $suffix;
+        $Surl = "https://{$this->hostName()}/url-short/". $suffix;
         $stm = $this->pdo->prepare("SELECT longUrl from urls_list where shortUrl = :shortUrl ");
         $stm->execute(["shortUrl" => $Surl]);
 

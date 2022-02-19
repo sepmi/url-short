@@ -3,7 +3,7 @@
 namespace App\models;
 use PDO;
 
-abstract class  DB{
+ class  DB{
    protected $server = "localhost";
    protected $db = "url-shorten";
    protected $username = 'root';
@@ -20,6 +20,10 @@ abstract class  DB{
         }catch (PDOException $e) {
             echo "connectio failed : " . $e->getMessage();
         }
+    }
+
+    public function hostName(){
+        return $this->server;
     }
 
 
