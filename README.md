@@ -2,6 +2,12 @@
 
 simple site with php that makes urls shorter.
 
+
+<img width="1534" alt="1" src="https://user-images.githubusercontent.com/74340951/154805552-e0c59317-b064-4d19-adfa-44dcaff1acb9.png">
+<img width="1534" alt="2" src="https://user-images.githubusercontent.com/74340951/154805569-d2fa3b78-baeb-4a8c-b3f5-33cab91544df.png">
+
+
+
 ## Usage: 
 
 
@@ -19,10 +25,12 @@ simple site with php that makes urls shorter.
   to make a table for your new database(made in previous step)
  
  
-# !important 
-if you do not connect to mysql with these settings 
+## !important 
+if you do **not** connect to mysql with these settings 
 
 username ="root" and password=" " and "localhost" 
 
 
 you  should change the settings in the App\Models\DB class [$username , $password , $server ]
+
+
